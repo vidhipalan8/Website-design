@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Prime pandit</title>
+        <link rel="icon" type="image/ico" href="img/Lg_logo.png" />
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <style>
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: background 0.4s, all 0.3s linear; }
+  .header .navbar {
+    background: transparent;
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px; }
+    .header .navbar .nav .nav-item {
+      margin-right: 45px; }
+      .header .navbar .nav .nav-item .nav-link {
+        font: 500 12px/80px "Roboto", sans-serif;
+        text-transform: uppercase;
+        color: #6b00b3;
+        padding: 0px;
+        display: inline-block; }
+        .header .navbar .nav .nav-item .nav-link:after {
+          display: none;
+           }
+            .header .navbar .nav .nav-item:last-child {
+        margin-right: 0px; }
+        </style>
+    </head>
+    <body>
+  <div class="header">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container">
+                        <a class=" logo" href="#"><img src="img/Lg_logo.png" alt="" width="120px" height="100px">
+                        </a>
+                            <div class="active-orange-4 mb-4">
+                <input class="form-control" type="text" placeholder="Search for Courses" aria-label="Search" size="60">
+                </div>
+                            <ul class="nav navbar-nav menu_nav ml-auto">
+                                <li class="nav-item"><a class="nav-link" href="main_index.html">Home</a></li> 
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Classes</a>    
+                                </li> 
+                                <li class="nav-item">
+                                    <a href="paper.html" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Latest Papers</a>
+                                </li> 
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+<style>
+ .banner {
+  position: relative;
+  z-index: 1;
+  min-height: 780px; }
+  .banner .banner_inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 780px; }
+    .banner  .banner_inner .overlay {
+      background: url(img/aa.jpg) no-repeat scroll center center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 121%;
+      bottom: 0;
+      z-index: -1; }
+    .banner  .banner_inner .banner_content {
+      color: #fff; }
+      .banner  .banner_inner .banner_content h5 {
+        text-transform: uppercase;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 15px; }
+      .banner  .banner_inner .banner_content h3 {
+        font-size: 42px;
+        font-family: serif;
+        font-weight: 900;
+        margin-bottom: 20px; }
+      .banner  .banner_inner .banner_content p {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        max-width: 620px;
+        margin: auto; }
+      .banner  .banner_inner .banner_content .main_btn {
+        margin-top: 40px; }
+  .banner_area .banner_inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 300px;
+    background: #04091e;
+    z-index: 1; }
+    .main_btn {
+  display: inline-block;
+  background: #ff6600;
+  padding: 0px 40px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 48px;
+  border-radius: 0px;
+  outline: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  border: 1px solid #ff6600;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 300ms linear 0s; }
+  .main_btn:hover {
+    background: transparent;
+    color: #ff6600; }
+
+    
+</style>
+        <section class="banner">
+            <div class="banner_inner d-flex align-items-center">
+                <div class="overlay bg-parallax"></div>
+                <div class="container">
+                    <div class="banner_content text-center">
+                        <h3>We Ensure better education <br/>for a better world</h3>
+                        <p>1000+ hours of engaging vedios covering all concepts</p>
+                        <a class="main_btn" href="#">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<style>
+        
+.content {
+  overflow: hidden; 
+  padding-top: 30px;
+padding-bottom: 40px;}
+.subcourse {
+  margin-left: -10px;
+  margin-right: -5px;
+  overflow: hidden;
+  margin-bottom: -30px; }
+  .subcourse .item {
+    padding-left: 10px;
+    padding-right: 5px;
+    position: relative;
+    overflow: hidden; }
+  .subcourse .item {
+    position: relative; }
+    .subcourse .item .text {
+      padding-left: 10px;
+      padding-right: 10px; }
+  .subcourse .text {
+    position: absolute;
+    left: 50px;
+    bottom: 10px;
+    padding-left: 5px;
+    padding-right: 35px; }
+    .subcourse .text .cat {
+      display: inline-block;
+      background: #ff6600;
+      color: #fff;
+      padding: 0px 25px;
+      border-radius: 5px;
+      line-height: 30px;
+      font-size: 14px;
+      font-weight: 500;
+      font-family:  sans-serif;
+      margin-bottom: 20px; }
+    .subcourse .text h4 {
+      font-size: 18px;
+      color: #fff;
+      margin-bottom: 15px;
+       }
+    .subcourse .text .list li {
+      display: inline-block;
+      margin-right: 20px; }    
+.wd55 {
+  width: 43%;
+  float: left;
+  margin-bottom: 30px; }
+.wd44 {
+  width: 43%;
+  float: left;
+  margin-bottom: 30px; }
+</style>
+
+        <section class="content p_120">
+            <div class="container">
+                <div class="main_title">
+                    <h2>Top Rated Courses</h2>
+                    <p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting up your own viewing station.</p>
+                </div>
+                <div class="row subcourse">
+                    <div class="col-lg-9">
+                        <div class="grid_inner">
+                            <div class="grid_item wd55">
+                                <div class="item">
+                                    <img src="img/c2.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#"><h4>Quadratic Polynomial</h4></a>
+                                        <a class="cat" href="#">Subscribe</a>                  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid_item wd44">
+                                <div class="item">
+                                    <img src="img/c3.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#"><h4>Geometry</h4></a>
+                                        <a class="cat" href="#">Subscribe</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid_item wd44">
+                                <div class="item">
+                                    <img src="img/c4.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#"><h4>Factorization</h4></a>
+                                        <a class="cat" href="#">Subscribe</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid_item wd55">
+                                <div class="item">
+                                    <img src="img/course.jpg" alt="">
+                                    <div class="text">
+                                        <a href="#"><h4>All The Three Sides Are Unqual</h4></a>
+                                        <a class="cat" href="#">Subscribe</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="item">
+                            <img src="img/course-3.jpg" alt="">
+                            <div class="text">
+                                <a href="#"><h4>Earth-The Habitat</h4></a>
+                                <a class="cat" href="#">Subscribe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<style>
+    
+.faculty {
+  background: #e6ffff;
+  padding-top: 10px;
+   }
+
+.team_item {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px; }
+  .team_item .team_name {
+    text-align: center;
+    margin-top: 30px; }
+    .team_item .team_name h4 {
+      margin-bottom: 5px;
+      color: #222222;
+      font-family: serif;
+      font-weight: bold;
+      font-size: 18px;
+       }
+    .team_item .team_name p {
+      font-size: 14px;
+      font-family: sans-serif;
+      color: #777777;
+      margin-bottom: 0px; }
+  .team_item:hover .team_img:before {
+    opacity: 1; }
+  .team_item:hover .team_img .hover {
+    opacity: 1; }
+  .team_item:hover .team_name h4 {
+    color: #ff6600; }
+
+
+
+.main_title {
+  text-align: center;
+  max-width: 680px;
+  margin: 0px auto 75px; }
+  .main_title h2 {
+    font-family:  serif;
+    font-size: 36px;
+    color: #222222;
+    margin-bottom: 12px; }
+  .main_title p {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: normal;
+    line-height: 24px;
+    color: #999999;
+    margin-bottom: 0px; }
+
+</style>
+        <section class="faculty p_120">
+            <div class="container">
+                <div class="main_title">
+                    <h2>Meet Our Faculty</h2>
+                    <p>TV Mohandas Pai, Chairman of Manipal Global Education</p>
+                </div>
+                <div class="row team_inner">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="team_item">
+                            <div class="team_img">
+                                <img class="rounded-circle" src="img/team-1.jpg" alt="">
+                                
+                            </div>
+                            <div class="team_name">
+                                <h4>Martin Parmar</h4>
+                                <p>Faculty of Science and Technology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="team_item">
+                            <div class="team_img">
+                                <img class="rounded-circle" src="img/team-2.jpg" alt="">
+                                
+                            </div>
+                            <div class="team_name">
+                                <h4>Ritesh Patel</h4>
+                                <p>Faculty of Social Science</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="team_item">
+                            <div class="team_img">
+                                <img class="rounded-circle" src="img/team-3.jpg" alt="">
+                                
+                            </div>
+                            <div class="team_name">
+                                <h4>Ashwin Makwana</h4>
+                                <p>Faculty of Mathematics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="team_item">
+                            <div class="team_img">
+                                <img class="rounded-circle" src="img/team-4.jpg" alt="">
+                                
+                            </div>
+                            <div class="team_name">
+                                <h4>Vaishali Mewada</h4>
+                                <p>Faculty of Hindi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<style>
+    
+.courses {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+  background-color: #ffe0cc; }
+  .courses .pop {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 54%;
+    flex: 0 0 54%;
+    max-width: 54%;
+    width: 54%;
+    padding: 40px; }
+    .courses .pop h5 {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 8px; }
+    .courses .pop span {
+      font-size: 12px;
+      color: #61ba6d;
+      margin-bottom: 10px;
+      display: block; }
+    .courses .pop .course-ratings {
+      font-size: 10px;
+      color: #fbb710;
+      margin-bottom: 30px; }
+      .courses .pop .course-ratings .fa-star-o {
+        color: #ffe0cc; }
+  .courses .popular-course-thumb {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 46%;
+    flex: 0 0 46%;
+    max-width: 46%;
+    width: 46%;
+    height: 350px; }
+.top-course{
+    padding-top: 30px;
+}
+
+</style>
+
+
+
+       <div class="top-course section-padding-100-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading text-center">
+                        
+                        <h3>Top Popular Courses</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="courses d-flex align-items-center">
+                        <div class="pop">
+                            <h5>Geography</h5>
+                            <span>By MK. Parmar</span>
+                            <div class="course-ratings">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>If you want to break into cutting-edge AI, this course will help you do so.</p>
+                            </div>
+                            
+                        <div class="popular-course-thumb bg-img" style="background-image: url(img/pc1.png); background-repeat: no-repeat;"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="courses d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="pop">
+                            <h5>Advanced HTML5</h5>
+                            <span>By VM shah</span>
+                            <div class="course-ratings">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>Course will contain basic of html.</p>
+                            </div>
+                        <div class="popular-course-thumb bg-img" style="background-image: url(img/pc2.png); background-repeat: no-repeat;"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="courses d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="pop">
+                            <h5>Modern History</h5>
+                            <span>By Smith Parmar</span>
+                            <div class="course-ratings">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>Includes table of dates.</p>
+                             </div>
+                        <div class="popular-course-thumb bg-img" style="background-image: url(img/pic.png); background-repeat: no-repeat;"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="courses d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="700ms">
+                        <div class="pop">
+                            <h5>Chemistry</h5>
+                            <span>By SS Solanki</span>
+                            <div class="course-ratings">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>All the Chemical reaction included in the course material.</p>
+                            </div>
+                        <div class="popular-course-thumb bg-img" style="background-image: url(img/rena.png); background-repeat: no-repeat;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+        
+
+<style>
+    .footer-area {
+  background: #04091e; }
+
+.footer_title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  margin-bottom: 28px; }
+
+  
+
+.tp_widgets .list li {
+  margin-bottom: 12px; }
+  .tp_widgets .list li a {
+    color: #777777;
+    font-size: 14px;
+    font-weight: normal;
+    font-family:  sans-serif;
+    transition: all 300ms linear; }
+  .tp_widgets .list li:hover a {
+    color: #fff; }
+
+</style>
+        <footer class="footer-area p_120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2  col-md-6 col-sm-6">
+                        <div class="single-footer-widget tp_widgets">
+                           <h6 class="footer_title">Top Vedio Lectures</h6>
+                            <ul class="list">
+                                <li><a href="#">Class Jr. kg</a></li>
+                                <li><a href="#">Class Sr. kg</a></li>
+                                <li><a href="#">Class 1-6</a></li>
+                                <li><a href="#">Class 7-12</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2  col-md-6 col-sm-6">
+                        <div class="single-footer-widget tp_widgets">
+                           <h6 class="footer_title">Latest Board Papers</h6>
+                            <ul class="list">
+                                <li><a href="#">Chemistry</a></li>
+                                <li><a href="#">Physics</a></li>
+                                <li><a href="#">Biology</a></li>
+                                <li><a href="#">Mathematics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2  col-md-6 col-sm-6">
+                        <div class="single-footer-widget tp_widgets">
+                           <h6 class="footer_title">Resources</h6>
+                            <ul class="list">
+                                <li><a href="#">Guides</a></li>
+                                <li><a href="#">Research</a></li>
+                                <li><a href="#">Experts</a></li>
+                                <li><a href="#">References</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+        </footer>
+        
